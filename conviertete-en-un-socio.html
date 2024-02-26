@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>conviertete en un socio</title>
+
+    <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <header id="cabeceraPrincipal">
+
+        <a href="MainPage.html">
+            <span><img src="images\logo.png" alt="logo de la ong" class="logo"></span>
+            <span class="titulo">Manos unidas</span>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="MainPage.html">Sobre nosotros</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="donde-nos-puedes-encontrar.html">Donde nos puedes encontrar</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="conviertete-en-un-socio.html">Conviertete en un socio</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main style="margin-top: 140px;">
+        <h1>Formulario de Socio</h1>
+
+        <form>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nom" name="nombre" required>
+
+            <br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="cognoms" name="apellidos" required>
+
+            <br>
+
+            <label for="tratamiento">Tratamiento:</label>
+            <select id="tractament" name="tratamiento" required>
+                <option value="Sr.">Sr.</option>
+                <option value="Sra.">Sra.</option>
+                <option value="Sense tractament">Sense tractament</option>
+            </select>
+
+            <br>
+
+            <label for="codigo_postal">Codigo Postal:</label>
+            <input type="text" id="codi_postal" name="codigo_postal" pattern="[0-9]{5}" required>
+            <small>Format: 12345</small>
+
+            <br>
+
+            <label for="telefono">Numero de telefono:</label>
+            <input type="tel" id="telefon" name="telefono" pattern="[0-9]{9}">
+            <small>Format: 123456789</small>
+
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <label for="quota_soci">Cuota de socio (0.50€ al mes):</label>
+            <select id="quota_soci" name="quota_soci" required>
+                <option value="opcio1">No, no quiero pagar la cuota</option>
+                <option value="opcio2">Si, quiero aportar dinero a la causa</option>
+            </select>
+
+            <br>
+
+            <label>Temas de interes:</label>
+            
+            <label for="tema1">Actividades</label>
+            <input type="checkbox" id="tema1" name="temas_interes[]" value="tema1">
+
+            <label for="tema2">Noticias</label>
+            <input type="checkbox" id="tema2" name="temas_interes[]" value="tema2">
+
+            <br>
+
+            <label for="conformidad">Estoy de acuerdo con la politica de privacidad</label>
+            <input type="checkbox" id="conformidad" name="conformidad" required>
+
+            <br>
+
+            <label for="subscripcion_newsletter">Subscribirse a la newsletter</label>
+            <input type="checkbox" id="subscripcion_newsletter" name="subscripcion_newsletter">
+
+            <br>
+
+            <input type="submit" value="Enviar">
+
+        </form>
+    </main>
+
+
+    <footer id="piePagina">
+        <div>
+            <p><b>Manos Unidas</b></p>
+        </div>
+        <div>
+            <img src="images\logo.png" alt="Logo de la ong">
+        </div>
+        <div>
+            <p> | <b>Barcelona</b> | 933 02 02 24 | Pl. d'Urquinaona, 10, Ciutat Vella, 08010 Barcelona</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
